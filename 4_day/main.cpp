@@ -65,58 +65,31 @@ int main()
     // }
 
     // // -------------------------------------------------------------
-    // cout << "for primary" << endl
-    //      << endl;
-
-    // int c;
-
-    // cout << "Enter No: ";
-    // cin >> c;
-    // int count = 0;
-
-    // for (int b = 2; b < c; b++)
-    // {
-    //     if (c % b == 0)
-    //     {
-    //         count++;
-    //     }
-    // }
-
-    // if (count == 0)
-    // {
-    //     cout << c << " is prime number" << endl;
-    // }
-    // else
-    // {
-    //     cout << c << " is not prime number";
-    // }
-
-    // ================================================================================
-    cout << "for primary number indicator" << endl
+    cout << "for primary" << endl
          << endl;
 
     int c;
-    cout << "enter the Number: ";
-    cin >> c;
 
+    cout << "Enter No: ";
+    cin >> c;
     int count = 0;
-    for (int b = 2; b <= c; b++)
+
+    for (int b = 2; b < c; b++)
     {
         if (c % b == 0)
         {
-            cout << b << endl;
+            count++;
         }
-
-        // for (int b = 2; b <= c; b++)
-        // {
-        //     if (count == 0)
-        //     {
-        //         cout << c << " is prime number" << endl;
-        //     }
-        //     else
-        //     {
-        //         cout << c << " is not prime number";
-        //     }
-        // }
     }
+
+    if (count == 0)
+    {
+        cout << c << " is prime number" << endl;
+    }
+    else
+    {
+        cout << c << " is not prime number";
+    }
+
+    // ================================================================================
 }
