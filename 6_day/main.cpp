@@ -22,7 +22,7 @@ int main()
 
     cout << "enter the value: ";
     cin >> n;
-    int sum = 0;
+    // int sum = 0;
     ld = n % 10;
 
     while (n > 10)
