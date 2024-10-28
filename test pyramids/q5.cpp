@@ -2,19 +2,20 @@
 using namespace std;
 
 int main(){
-        int rows;
-        int a = 0;
-        int b = 0;
-        int c = 0;
+        int rows = 5;
 
-    cout << "Enter number of rows: ";
-    cin >> rows;
-
-    for(int i = 1; i <= rows; ++i) {
-        for(int j = 1; j <= rows; ++j) {
-            cout << "  ";
-            ++a;
+    for(int i = 5; i >= 1; i--) {
+        for(int j = i; j >= 1; j--) {
+          cout << "  ";
         }
-      
+
+        for(int j = i; j <= 5; ++j) {
+          cout << j << " ";
+        }
+
+        for(int j = 4; j >= i; j--) {
+          cout << j << " ";
+        }
+      cout << endl;
     }
 }
