@@ -9,7 +9,6 @@ int main () {
 	string ln;
 	int pass;
 	int conp;
-	// int cp = rand();
 	
    
    
@@ -40,6 +39,7 @@ int main () {
 				cout << endl;
 				cout << "you are registered please login your account here: ";
 				cout << endl;
+				cout << endl;
 
 				cout << "enter your username: ";
 				cin >> u;
@@ -50,9 +50,19 @@ int main () {
 					cin >> pass;
 
 					if(pass == pass) {
+				cout << endl;
+						
+				cout << endl;
+						
 						cout << "---------------------------------------------------------------------------" << endl;
 						cout << ":::::::::::::: congratulations !! successfully Logged In ::::::::::::::::" << endl;
 						cout << "---------------------------------------------------------------------------" << endl;
+
+				cout << endl;
+				cout << endl;
+
+
+
 
 					}
 				}
@@ -68,9 +78,9 @@ int main () {
 		cout << endl;
 
 
-		cout << "your first name is :" << fn << endl;
-		cout << "your last name is :" << ln << endl;
-		cout << "your user name is :" << u << endl;
+		cout << "your first name is : " << fn << endl;
+		cout << "your last name is : " << ln << endl;
+		cout << "your user name is : " << u << endl;
 	}
 
 	else {
