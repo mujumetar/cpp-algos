@@ -19,13 +19,17 @@ int main()
 		str2 = str2 + str[i];
 	}
 	
-	cout << endl << endl;
+	cout << endl;
 	if(str == str2)
 	{
 		cout << "pelledium";
+	cout << endl;
+		
 	}
 	else
 	{
 		cout << "non pelledium";
+	cout << endl;
+		
 	}
 }
