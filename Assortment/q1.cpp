@@ -13,10 +13,26 @@ int main(){
 	{
 		cout << "a["<< i <<"]: ";
 		cin >> a[i];
-	}
-	cout << endl;
+		
 	
-	cout << a[size];
+	
+		
+		
+	}
+	
+	
+	for(int i = 0;i <= size; i++) 
+	{
+		cout << a[i] << endl;	
+	}
+
+	// if(i < 0) 
+	// {
+	// 	cout << a[i];
+	// }
+	// cout << endl;
+	
+	
 	
 	
 }

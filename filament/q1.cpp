@@ -1,53 +1,37 @@
 #include <iostream>
 #include <string>
 
+
 using namespace std;
+
 
 int main()
 {
-	 char str[50], str2[50];
+    string str, temp;
+    int i = 0, j;
 
+    cout << "Enter a string to check for Palindrome: ";
+    cin >> str;
 
+    temp = str;
+    
+    j = str.length() - 1;
+	
+    while (i < j) 
+    {
+        swap(str[i], str[j]);
+        i++;
+        j--;
+    }
 
-	cout << "Enter a string to check for Palindrome: ";
-	cin >> str;
-	
-	int len=0;
-	
-	for(int i=0; i< str[i] != '\0'; i++)
-	{
-		len++;
-	}
-	
-	// cout << len;
+    if (temp == str) 
+    {
+        cout << "The string is a palindrome." << endl;
+    } 
+    else 
+    {
+        cout << "The string is not a palindrome." << endl;
+    }
 
-	
-	// j = str.length() - 1;
-	
-	int j=0;
-	
-	for(int i=len-1;i >=0; i--)
-	{
-		str2[j] = str[i];
-		++j;
-	}
-	
-	// cout << j;
-	
-	cout << sizeof(str) << ", " << sizeof(str2) <<endl;
-	
-	cout << str2 << ", " << str;
-	
-	
-	
-	// if (str2 == str) 
-	// {
-	// 	cout << "The is a palindrome." << endl;
-	// } 
-	// else 
-	// {
-	// 	cout << "The is not a palindrome." << endl;
-	// }
-
-	return 0;
+    return 0;
 }
